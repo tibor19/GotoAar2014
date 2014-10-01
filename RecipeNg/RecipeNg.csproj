@@ -181,6 +181,7 @@
     <Content Include="Content\Images\Food\sandwich2-clip.jpg" />
     <Content Include="Content\Images\Food\waffles-clip.jpg" />
     <Content Include="Content\Images\masthead.gif" />
+    <None Include="Data\recipe.json" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -196,6 +197,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Data\recipies.json" />
     <None Include="Properties\PublishProfiles\recipeng.pubxml" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
