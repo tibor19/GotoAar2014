@@ -23,7 +23,9 @@
             </ul>
         </nav>
 
-        <article>
+        <article ng-controller="recipeController">
+            {{title}}
+            {{recipe.name}}
             <div class="box">
                 <div class="leftboxcontent">
                     <h2><a href="#/search">Search for recipes</a></h2>
@@ -68,5 +70,7 @@
     </div>
     <script src="Scripts/angular.js"></script>
     <script src="app/recipe/app.js"></script>
+    <script src="app/recipe/controllers/recipeController.js"></script>
+    <script src="data/recipe.js"></script>
 </body>
 </html>
