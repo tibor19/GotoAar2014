@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="recipe">
 <head>
-    <title>The spaghetti code files</title>
+    <title>{{title}}</title>
     <link href="Content/app.css" rel="stylesheet" />
+    <link href="Scripts/angular-csp.css" rel="stylesheet" />
 </head>
 <body>
     <div class="container">
-
         <header>
             <h1>The spaghetti code files</h1>
             <h3>Random recipes</h3>
@@ -66,5 +66,7 @@
             </p>
         </footer>
     </div>
+    <script src="Scripts/angular.js"></script>
+    <script src="app/recipe/app.js"></script>
 </body>
 </html>
