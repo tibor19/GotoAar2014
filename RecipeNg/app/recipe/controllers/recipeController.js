@@ -1,12 +1,11 @@
 ﻿(function () {
     angular.module('recipe')
-        .controller('recipeController', ['$scope', function ($scope) {
+        .controller('recipeController', ['$scope', '$log', function ($scope, $log) {
 
             $scope.recipe = recipe;
-            $scope.message = 'Hello World';
 
             $scope.alert = function () {
-                console.log($scope.message);
+                $log.debug($scope.message);
             }
     }]);
 })();
