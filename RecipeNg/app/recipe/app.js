@@ -1,5 +1,5 @@
 ﻿(function() {
-    angular.module('recipe', []).config(function($logProvider) {
+    angular.module('recipe', ['ngResource']).config(function($logProvider) {
         $logProvider.debugEnabled(false);
     }).run(
         function($rootScope) {

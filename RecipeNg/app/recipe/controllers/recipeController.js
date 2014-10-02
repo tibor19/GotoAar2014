@@ -1,16 +1,16 @@
 ﻿(function () {
     angular.module('recipe')
-        .controller('recipeController', ['$scope', '$log', 'httpRecipeService',
+        .controller('recipeController', ['$scope', '$log', 'resourceRecipeService',
             function ($scope, $log, recipeService) {
 
                 $scope.recipe = { name : 'Working on it'};
-                recipeService.getRecipe(1).then(function (result){
-                    $scope.recipe = result.data;
+                recipeService.getRecipe(2).then(function (data){
+                    $scope.recipe = data;
                 });
 
                 $scope.count = 0;
-                recipeService.getRecipes().then(function (result) {
-                    $scope.count = result.data.length;
+                recipeService.getRecipes().then(function (data) {
+                    $scope.count = data.length;
                 });
 
                 $scope.alert = function () {

@@ -140,10 +140,7 @@
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="app\recipe\directives\" />
-    <Folder Include="app\recipe\templates\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\RecipesController.cs" />
@@ -160,10 +157,13 @@
   <ItemGroup>
     <Content Include="app\recipe\app.js" />
     <Content Include="app\recipe\controllers\recipeController.js" />
+    <Content Include="app\recipe\directives\homePage.js" />
     <Content Include="app\recipe\services\httpRecipeService.js" />
     <Content Include="app\recipe\services\recipeValues.js" />
     <Content Include="app\recipe\services\recipeValue.js" />
+    <Content Include="app\recipe\services\resourceRecipeService.js" />
     <Content Include="app\recipe\services\simpleRecipeService.js" />
+    <Content Include="app\recipe\templates\home.html" />
     <Content Include="App_Data\RecipesDB.mdf" />
     <Content Include="App_Data\RecipesDB_log.ldf">
       <DependentUpon>RecipesDB.mdf</DependentUpon>
