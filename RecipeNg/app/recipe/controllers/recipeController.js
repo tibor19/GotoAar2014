@@ -3,9 +3,11 @@
         .controller('recipeController', ['$scope', '$log', 'resourceRecipeService',
             function ($scope, $log, recipeService) {
 
-                $scope.recipe = { name : 'Working on it'};
+                $scope.isReady = false;
+                $scope.recipe = { };
                 recipeService.getRecipe(2).then(function (data){
                     $scope.recipe = data;
+                    $scope.isReady = true;
                 });
 
                 $scope.count = 0;
