@@ -160,6 +160,7 @@
   <ItemGroup>
     <Content Include="app\recipe\app.js" />
     <Content Include="app\recipe\controllers\recipeController.js" />
+    <Content Include="app\recipe\services\recipeValues.js" />
     <Content Include="app\recipe\services\recipeValue.js" />
     <Content Include="App_Data\RecipesDB.mdf" />
     <Content Include="App_Data\RecipesDB_log.ldf">
