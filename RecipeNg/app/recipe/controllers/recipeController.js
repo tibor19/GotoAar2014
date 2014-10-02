@@ -1,12 +1,13 @@
 ﻿(function () {
     angular.module('recipe')
-        .controller('recipeController', ['$scope', '$log', 'recipeValue', 'recipeValues', function ($scope, $log, recipe, recipes) {
+        .controller('recipeController', ['$scope', '$log', 'simpleRecipeService',
+            function ($scope, $log, recipeService) {
 
-            $scope.recipe = recipe;
-            $scope.count = recipes.length;
+                $scope.recipe = recipeService.getRecipe(1);
+                $scope.count = recipeService.getRecipes().length;
 
-            $scope.alert = function () {
-                $log.debug($scope.message);
-            }
-    }]);
+                $scope.alert = function () {
+                    $log.debug($scope.message);
+                }
+            }]);
 })();

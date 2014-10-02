@@ -162,6 +162,7 @@
     <Content Include="app\recipe\controllers\recipeController.js" />
     <Content Include="app\recipe\services\recipeValues.js" />
     <Content Include="app\recipe\services\recipeValue.js" />
+    <Content Include="app\recipe\services\simpleRecipeService.js" />
     <Content Include="App_Data\RecipesDB.mdf" />
     <Content Include="App_Data\RecipesDB_log.ldf">
       <DependentUpon>RecipesDB.mdf</DependentUpon>
